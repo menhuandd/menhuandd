@@ -12,9 +12,11 @@
 */
 
 Route::get('/', function () {
+	echo'aaaa';
     return view('welcome');
 });
 // 后台路由开始
+Route::get('/admin','Admin\IndexController@index');
 
 
 
