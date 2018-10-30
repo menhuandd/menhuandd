@@ -12,11 +12,13 @@
 */
 
 Route::get('/', function () {
-	echo'aaaa';
+	echo'我是首页';
     return view('welcome');
 });
 // 后台路由开始
 Route::get('/admin','Admin\IndexController@index');
+// 用户的增删改查路由
+ Route:resource('/admin/user','Admin\UserController');
 
 
 

@@ -10,13 +10,14 @@ use App\Http\Controllers\Controller;
 class IndexController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     *  后台首页页面
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        echo '这是后台首页';
+        // 后台首页
+       return view('admin.index.index');
     }
 
     /**
